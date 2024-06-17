@@ -11,111 +11,92 @@ const progressContainer = document.getElementById("progress-container");
 const title = document.getElementById("title");
 const cover = document.getElementById("cover");
 
-
 //SONGS HOME PAGE ------------------------
-
 
 document.getElementById("play100").addEventListener("click", () => {
   loadSong("Nimawa");
   playSong();
 });
 
-
 document.getElementById("play99").addEventListener("click", () => {
   loadSong("Hena Ketayam");
   playSong();
 });
-
 
 document.getElementById("play98").addEventListener("click", () => {
   loadSong("Nohithunata");
   playSong();
 });
 
-
 document.getElementById("play97").addEventListener("click", () => {
   loadSong("Alinde");
   playSong();
 });
-
 
 document.getElementById("play96").addEventListener("click", () => {
   loadSong("Hadakari");
   playSong();
 });
 
-
 document.getElementById("play95").addEventListener("click", () => {
   loadSong("Mathaka Makala");
   playSong();
 });
-
 
 document.getElementById("play94").addEventListener("click", () => {
   loadSong("Kasi Saban Pena");
   playSong();
 });
 
-
 document.getElementById("play93").addEventListener("click", () => {
   loadSong("Ape Hadhakam");
   playSong();
 });
-
 
 document.getElementById("play92").addEventListener("click", () => {
   loadSong("Zhurek");
   playSong();
 });
 
-
 document.getElementById("play91").addEventListener("click", () => {
   loadSong("Neth Manema");
   playSong();
 });
-
 
 document.getElementById("play90").addEventListener("click", () => {
   loadSong("Heena Miyadi");
   playSong();
 });
 
-
 document.getElementById("play89").addEventListener("click", () => {
   loadSong("Highway wage yan");
   playSong();
 });
-
 
 document.getElementById("play88").addEventListener("click", () => {
   loadSong("Maga Haree");
   playSong();
 });
 
-
 document.getElementById("play87").addEventListener("click", () => {
   loadSong("Hadaganna Me Hitha");
   playSong();
 });
-
 
 document.getElementById("play86").addEventListener("click", () => {
   loadSong("Aaley Wandanawak");
   playSong();
 });
 
-
 document.getElementById("play85").addEventListener("click", () => {
   loadSong("Mithya Mayam");
   playSong();
 });
 
-
 document.getElementById("play84").addEventListener("click", () => {
   loadSong("Sithuwam Hade");
   playSong();
 });
-
 
 // SONG NAMES --------------------
 
@@ -136,10 +117,8 @@ const songs = [
   "Neth Manema",
   "Hena Ketayam",
   "Heena Miyadi",
-  "Sithuwam Hade"
-
+  "Sithuwam Hade",
 ];
-
 
 let songIndex = 0;
 
@@ -151,8 +130,8 @@ function getSongTitle(song) {
 // Load song details
 function loadSong(song) {
   title.innerText = getSongTitle(song);
-  audio.src = `https://github.com/sachiofficial/music/blob/main/song/${song}.mp3?raw=true`;
-  cover.src = `https://github.com/sachiofficial/music/blob/main/cover%20images/${song}.png?raw=true`;
+  audio.src = `https://github.com/sachicodex/music/blob/main/song/${song}.mp3?raw=true`;
+  cover.src = `https://github.com/sachicodex/music/blob/main/cover%20images/${song}.png?raw=true`;
 }
 
 // Play song
@@ -219,12 +198,6 @@ audio.addEventListener("ended", nextSong);
 // Initial song load
 loadSong(songs[songIndex]);
 
-
-
-
-
-
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -245,11 +218,3 @@ function filterFunction() {
     }
   }
 }
-
-
-
-
-
-
-
-
